@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>REGISTRATION FORM</title>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Mukta:wght@200;300;400;500;600;700;800&family=Playwrite+MX&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+      </style>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    
+    <form onsubmit="display(event)"  >
+  
+      <div class="container">
+
+    <div id="heading">
+      <h3>REGISTRATION FORM</h3>
+    </div> 
+
+     
+      <div class="items" id="name">
+        <label for="name">NAME</label>
+        <input type="text" id="f-name" placeholder="First Name"/>
+  
+        <label for="name"></label>
+        <input type="text" id="s-name" placeholder="Second Name" />
+  
+      </div>
+      <div class="items">
+        <label for="email">EMAIL</label>
+        <input type="email" name="email" id="email" />
+      </div>
+      <div class="items">
+        <label for="number">PHONE NUMBER</label>
+        <input type="number" name="phone number" id="number" placeholder="0xxx xxxxxxx" />
+      </div>
+      <div class="items">
+        <label for="address">ADDRESS</label>
+        <input type="text" name="address" id="address" />
+      </div>
+      <div class="items">
+        <label for="city">CITY</label>
+        <input type="text" name="city" id="city" />
+        <label for="country">COUNTRY</label>
+        <input type="text" name="country" id="country" />
+      </div>
+      <div class="items">
+        <label for="gender">GENDER</label>
+        <select name="gender" id="gender">
+          <option value="male">MALE</option>
+          <option value="female">FEMALE</option>
+          
+        </select>
+      </div>
+      <div class="items">
+        <h4>PREFFERED WAY TO CONTACT?</h4>
+        <label for="phone">PHONE</label>
+        <input type="radio" name="prefferd" value="Phone" class="preffered"/>
+        <label for="r-email">EMAIL</label>
+        <input type="radio" name="prefferd" value="Email" class="preffered" />
+        <label for="any">ANY</label>
+        <input type="radio" name="prefferd" value="Any" class="preffered" />
+      </div>
+      <div class="items">
+          <label for="date"  >DATE</label>
+        <input type="date" name="date" id="date">
+        
+      </div>
+      <div class="items">
+        <label for="elligible">ARE YOU ELLIGIBLE?</label>
+        <input type="checkbox" name="elligible" id="elligible"value="elligible" checked>
+      </div>
+      <div class="items">
+        <label for="age">WHAT IS YOUR AGE?</label>
+        <input type="number" name="age" id="age">
+      </div>
+<div class="items">
+  <input type="submit" value="submit now" id="submit">
+</div>
+    </form>
+   
+  </div>
+  <div id="display-data"></div>
+    <script src="script.js">
+    </script>
+  </body>
+</html>
